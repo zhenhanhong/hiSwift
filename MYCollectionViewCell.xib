@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MYCollectionViewCell" customModule="HellowSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="130"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="tu1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KBk-kb-muE">
+                        <rect key="frame" x="10" y="10" width="106.5" height="86"/>
+                        <color key="backgroundColor" red="0.40413326063748423" green="1" blue="0.36671194299783827" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tu2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lfp-by-UIm">
+                        <rect key="frame" x="126" y="10" width="106" height="86"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="koB-vE-Ac0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="koB-vE-Ac0"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tu4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a0b-4p-VcH">
+                        <rect key="frame" x="242" y="10" width="106.5" height="86"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4F-ya-5Qq">
+                        <rect key="frame" x="10" y="101" width="339" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.96076485725161298" green="1" blue="0.060317293996110521" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="KBk-kb-muE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Bbj-km-Sgj"/>
+                <constraint firstAttribute="trailing" secondItem="a0b-4p-VcH" secondAttribute="trailing" constant="10" id="FSF-8o-bDu"/>
+                <constraint firstItem="a0b-4p-VcH" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailingMargin" id="Gcm-Yt-RT5"/>
+                <constraint firstItem="lfp-by-UIm" firstAttribute="top" secondItem="KBk-kb-muE" secondAttribute="top" constant="-2" id="HNr-f0-ygs"/>
+                <constraint firstItem="a0b-4p-VcH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="HOx-ek-GBd"/>
+                <constraint firstItem="lfp-by-UIm" firstAttribute="width" secondItem="KBk-kb-muE" secondAttribute="width" id="L5T-jk-XDU"/>
+                <constraint firstItem="a0b-4p-VcH" firstAttribute="leading" secondItem="lfp-by-UIm" secondAttribute="trailing" constant="10" id="MEQ-or-U99"/>
+                <constraint firstItem="lfp-by-UIm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="NMx-BT-qDF"/>
+                <constraint firstItem="a0b-4p-VcH" firstAttribute="bottom" secondItem="lfp-by-UIm" secondAttribute="bottom" id="UZ1-N8-rhJ"/>
+                <constraint firstItem="p4F-ya-5Qq" firstAttribute="leading" secondItem="KBk-kb-muE" secondAttribute="leading" id="Yrx-Mg-CbO"/>
+                <constraint firstItem="lfp-by-UIm" firstAttribute="leading" secondItem="KBk-kb-muE" secondAttribute="trailing" constant="10" id="dqY-N4-ATT"/>
+                <constraint firstAttribute="trailing" secondItem="p4F-ya-5Qq" secondAttribute="trailing" constant="10" id="eRk-1o-tMQ"/>
+                <constraint firstItem="p4F-ya-5Qq" firstAttribute="top" secondItem="KBk-kb-muE" secondAttribute="bottom" constant="5" id="eY0-YW-DX9"/>
+                <constraint firstAttribute="bottom" secondItem="KBk-kb-muE" secondAttribute="bottom" constant="34" id="emB-Dw-9oF"/>
+                <constraint firstAttribute="bottom" secondItem="p4F-ya-5Qq" secondAttribute="bottom" constant="5" id="hgU-qv-8L6"/>
+                <constraint firstItem="lfp-by-UIm" firstAttribute="bottom" secondItem="KBk-kb-muE" secondAttribute="bottom" id="o2F-3F-IQf"/>
+                <constraint firstItem="a0b-4p-VcH" firstAttribute="width" secondItem="lfp-by-UIm" secondAttribute="width" id="rLN-gq-Uif"/>
+                <constraint firstItem="lfp-by-UIm" firstAttribute="leading" secondItem="KBk-kb-muE" secondAttribute="trailing" constant="3" id="u9J-JA-usP"/>
+                <constraint firstItem="KBk-kb-muE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="yBF-Au-XMY"/>
+            </constraints>
+            <size key="customSize" width="359" height="130"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HNr-f0-ygs"/>
+                    <exclude reference="u9J-JA-usP"/>
+                    <exclude reference="Gcm-Yt-RT5"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="brief" destination="p4F-ya-5Qq" id="QrJ-XB-iFv"/>
+                <outlet property="img1" destination="KBk-kb-muE" id="IGP-cx-tJ9"/>
+                <outlet property="img2" destination="lfp-by-UIm" id="gwD-r6-8iU"/>
+                <outlet property="img3" destination="a0b-4p-VcH" id="WpH-Qh-Ybg"/>
+            </connections>
+            <point key="canvasLocation" x="341.5" y="355"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tu1.jpg" width="1024" height="819"/>
+        <image name="tu2.jpg" width="1024" height="768"/>
+        <image name="tu4.jpg" width="1024" height="681"/>
+    </resources>
+</document>
